@@ -319,7 +319,7 @@ class EmailEntity(Entity):
                 _LOGGER.debug(f'parsing email for parser {EMAIL_DOMAIN}')
                 try:
                     if EMAIL_DOMAIN in email_from:
-                        self._attr[ATTR_TRACKING_NUMBERS][ATTR] = self._attr[ATTR_TRACKING_NUMBERS][ATTR] + parser(email=email)
+                        self._attr[ATTR_TRACKING_NUMBERS][ATTR] += parser(email=email)
                 except Exception as err:
                     _LOGGER.error('{} error: {}'.format(ATTR, err))
 
