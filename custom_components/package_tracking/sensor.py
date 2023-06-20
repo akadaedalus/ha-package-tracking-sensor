@@ -61,6 +61,7 @@ from .parsers.guitar_center import ATTR_GUITAR_CENTER, EMAIL_DOMAIN_GUITAR_CENTE
 from .parsers.sony import ATTR_SONY, EMAIL_DOMAIN_SONY, parse_sony
 from .parsers.sylvane import ATTR_SYLVANE, EMAIL_DOMAIN_SYLVANE, parse_sylvane
 from .parsers.adafruit import ATTR_ADAFRUIT, EMAIL_DOMAIN_ADAFRUIT, parse_adafruit
+from .parsers.barkbox import ATTR_BARKBOX, EMAIL_DOMAIN_BARKBOX, parse_barkbox
 
 from .parsers.generic import ATTR_GENERIC, EMAIL_DOMAIN_GENERIC, parse_generic
 
@@ -110,6 +111,7 @@ parsers = [
     (ATTR_SONY, EMAIL_DOMAIN_SONY, parse_sony),
     (ATTR_SYLVANE, EMAIL_DOMAIN_SYLVANE, parse_sylvane),
     (ATTR_ADAFRUIT, EMAIL_DOMAIN_ADAFRUIT, parse_adafruit),
+    (ATTR_BARKBOX, EMAIL_DOMAIN_BARKBOX, parse_barkbox),
 
     (ATTR_GENERIC, EMAIL_DOMAIN_GENERIC, parse_generic),
 ]
