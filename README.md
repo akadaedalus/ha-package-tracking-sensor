@@ -1,4 +1,4 @@
-# Home Assistant Email Sensor
+# Home Assistant Package Tracking Sensor
 
 Gets emails from IMAP and parses out any tracking numbers. Goes well with the [tracking-number-card](https://github.com/ljmerza/tracking-number-card) for lovelace!
 
@@ -58,11 +58,11 @@ If you want support for tracking, forward me the email (ljmerza at gmail) and op
 
 ## Installation
 
-- Add the `email` folder in your `custom_components` folder
+- Add the `package_tracking` folder in your `custom_components` folder
 
 ```yaml
 sensor:
-  - platform: email
+  - platform: package_tracking
     email: !secret my_email
     password: !secret my_email_password
 ```
